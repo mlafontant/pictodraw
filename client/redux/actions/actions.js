@@ -84,6 +84,12 @@ const clearCanvas = () => {
 	}
 } 
 
+const clear = () => {
+	return {
+		type: types.CLEAR,
+	}
+}
+
 module.exports = {
 	setDrawer,
 	setID,
@@ -95,5 +101,7 @@ module.exports = {
 	addPixs,
 	initializeContext,
 	resetContext,
-	clearCanvas
+	clearCanvas,
+	clear,
+	
 }

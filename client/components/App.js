@@ -3,6 +3,7 @@ import Canvas from './CanvasBoard';
 import MessageBox from './MessageBox';
 import Users from './Users';
 import CorrectWord from './CorrectWord';
+import Eraser from './Eraser';
 
 class App extends Component {
 	constructor(){
@@ -13,6 +14,7 @@ class App extends Component {
 		return(
 			<div className="gameContainer">
 			 	<Canvas /> 
+			 	<Eraser />
 			 	<section className="messageContainer">
 					<CorrectWord /> 
 			 		<h2>Players</h2>

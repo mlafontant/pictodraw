@@ -14,7 +14,8 @@ const initialState = {
     clickX: [],
     clickY: [],
     clickDrag: [],
-  }
+  },
+  
 };
 
 const mainReducer = (state=initialState, action) => {
@@ -120,6 +121,14 @@ const mainReducer = (state=initialState, action) => {
         {canvas: newCanvas}
       );
 
+    case types.CLEAR:
+      console.log('in reducer types.CLEAR')
+
+     
+      return Object.assign({},
+        state,
+        {eraser: eraser}
+      );
 
     default:
       return state;
